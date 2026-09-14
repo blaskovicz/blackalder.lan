@@ -1,0 +1,3 @@
+http://ethans-eggs.blackalder.lan {
+    reverse_proxy ethans-eggs:4000
+}
