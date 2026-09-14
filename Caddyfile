@@ -1,3 +1,10 @@
 http://ethans-eggs.blackalder.lan {
     reverse_proxy ethans-eggs:4000
 }
+
+# Catch-all: anything else on port 80 (bare blackalder.lan, unassigned
+# wildcard subdomains) gets a real 404 instead of Caddy's default blank
+# 200 for an unmatched Host.
+http:// {
+    respond 404
+}
