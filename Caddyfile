@@ -1,4 +1,4 @@
-http://ethans-eggs.blackalder.lan {
+http://ethanseggs.blackalder.lan {
     reverse_proxy ethans-eggs:4000
 }
 
